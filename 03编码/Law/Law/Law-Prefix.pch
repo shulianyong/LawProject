@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'Law' target in the 'Law' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+#define RGBColor(aRed,aGreen,aBlue) [UIColor colorWithRed:(aRed/255.0) green:(aGreen/255.0) blue:(aBlue/255.0) alpha:1]
+
+#define LASTUPDATETIMEINTERVAL 1371692570.939
+//#define NSLog(format, ...){}
+
+
+#import "SimpleLogger.h"
+#import "CommonUtil.h"
